@@ -7,5 +7,5 @@ require('isomorphic-fetch')
 const fetchRequest = async (url) => await fetch(url)
 
 fetchRequest("https://swapi.co/api/people/1")
-    .then((response) => response.json().then((data) => return data))
+    .then((response) => response.json().then((data) => console.log(data)))
     .catch((error) => console.log("Error: ", error.message))
